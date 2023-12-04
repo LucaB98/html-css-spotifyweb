@@ -35,6 +35,10 @@ ul{
     font-weight: 900;
 }
 
+a{
+color: white;
+}
+
 .upper-content{
     background-color: #141922;
     height: calc(100vh - 70px);
@@ -106,4 +110,90 @@ ul li{
 #footer{
     height: 70px;
     background-color: #282828;
+    color: white;
 }
+
+
+.box-song{
+    height: 100%;
+    display: flex;
+}
+
+.footer-left{
+    height: 100%;
+    margin-left: 10px;
+    width: calc(100% / 3);
+
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-center{
+    height: 100%;
+    width: calc(100% / 3);
+    
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-center > *{
+    margin: 0px 9px;
+}
+
+.footer-right{
+    height: 100%;
+    width: calc(100% / 3);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time-line{
+    width: 45%;
+    border: 3px solid #5A5A5A;
+    border-radius: 3px;
+
+    position: relative;
+}
+
+.time-line-white{
+    width: 40%;
+    border: 3px solid white;
+    border-radius: 3px;
+
+
+    position: absolute;
+
+    left: -2px;
+    top: -3px;
+}
+
+.time,
+.time-song{
+    font-size: 10px;
+}
+
+.play{
+    font-size: 25px;
+}
+
+.sinister{
+    width: 35px;
+    height: auto;
+}
+
+.song,
+.band{
+    font-size: 12px;
+}
+
