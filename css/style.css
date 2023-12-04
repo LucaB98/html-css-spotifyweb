@@ -7,10 +7,44 @@
 
 /*UTILS*/
 body{
-    font-family: 'montserrat';
+    font-family: 'Montserrat', sans-serif;
+    color:aliceblue;
 }
 
-.container{
+/* .container{
     max-width: 1200px;
     margin: 0 auto;
+} */
+
+.upper-content{
+    background-color: #141922;
+    height: calc(100vh - 70px);
+    display: flex;
+}
+
+.sidebar{
+    background-color: black;
+    width: 60px;
+}
+
+#main{
+    flex-basis: 90%;
+    overflow: auto;
+}
+
+#header-main{
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+
+
+#footer{
+    height: 70px;
+    background-color: #282828;
 }
