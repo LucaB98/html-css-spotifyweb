@@ -11,10 +11,10 @@ body{
     color:aliceblue;
 }
 
-/* .container{
+.container{
     max-width: 1200px;
     margin: 0 auto;
-} */
+}
 
 .active-bot{
     border-bottom: 2px solid greenyellow ;
@@ -45,16 +45,6 @@ ul{
     font-weight: 900;
 }
 
-.icon-nav{
-    width: 20px;
-    height: 20px;
-}
-
-.logo{
-    width: 100px;
-    height: 40px;
-}
-
 a{
     color: white;
     text-decoration: none;
@@ -68,12 +58,45 @@ a:hover{
     border-radius: 50%;
 }
 
+.time-line-white{
+    width: 40%;
+    border: 3px solid white;
+    border-radius: 3px;
+
+
+    position: absolute;
+    left: -2px;
+    top: -3px;
+}
+
+.time-line-white:hover{
+    width: 40%;
+    border: 3px solid greenyellow;
+    border-radius: 3px;
+
+
+    position: absolute;
+    left: -2px;
+    top: -3px;
+}
+
+.time-line{
+    width: 40%;
+    border: 3px solid #5A5A5A;
+    border-radius: 3px;
+
+    position: relative;
+}
+
+/* generic */
+
 .upper-content{
     background-color: #141922;
     height: calc(100vh - 70px);
     display: flex;
 }
 
+/* sidebar */
 .sidebar-small{
     background-color: black;
     width: 60px;
@@ -88,20 +111,14 @@ a:hover{
     display: none;
 }
 
-#main{
-    flex-grow: 1;
-    overflow: auto;
+.icon-nav{
+    width: 20px;
+    height: 20px;
 }
 
-#header-main{
-    height: 70px;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: sticky;
-
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 1;
+.logo{
+    width: 100px;
+    height: 40px;
 }
 
 .nav-top li,
@@ -211,6 +228,24 @@ li a{
     width: 25px;
 }
 
+/* main */
+
+#main{
+    flex-grow: 1;
+    overflow: auto;
+}
+
+#header-main{
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
 .btn-header{
    position: absolute;
    translate: 0 -50%;
@@ -228,8 +263,6 @@ li a{
   margin: 15px;
 }
 
-
-
 .btn-nav > a{
     text-decoration: none;
     font-size: 10px;
@@ -242,6 +275,8 @@ li a{
     justify-content: center;
 }
 
+/* prima section */
+
 .title-section{
     font-size: 20px;
     margin: 20px 20px 10px 20px;
@@ -253,16 +288,20 @@ li a{
     margin: 0 20px;
 }
 
+/* row */
 
 .row-songs{
     display: flex;
     flex-wrap: wrap;
 }
+/* col */
 
 .col-song{
     flex-basis: calc(100% / 2);
     padding: 10px;
 }
+
+/* card */
 
 .card-song{
     display: flex;
@@ -316,7 +355,7 @@ li a{
     font-weight: 900;
 }
     
-
+/* footer */
 
 #footer{
     height: 70px;
@@ -330,6 +369,7 @@ li a{
     display: flex;
 }
 
+/* footer parte sinistra */
 .footer-left{
     height: 100%;
     margin-left: 10px;
@@ -342,6 +382,19 @@ li a{
     align-items: center;
 }
 
+.song,
+.band{
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.sinister{
+    width: 35px;
+    height: auto;
+}
+
+/* footer parte centrale */
 .footer-center{
     height: 100%;
     width: calc(100% / 3);
@@ -368,9 +421,20 @@ li a{
     
 }
 
+.time,
+.time-song{
+    font-size: 10px;
+}
+
 .board-time > *{
     margin: 0 8px;
 }
+
+.play{
+    font-size: 25px;
+}
+
+/* footer parte destra */
 
 .footer-right{
     height: 100%;
@@ -387,59 +451,9 @@ li a{
    margin: 0 3px;
 }
 
-
-
-.time-line{
-    width: 40%;
-    border: 3px solid #5A5A5A;
-    border-radius: 3px;
-
-    position: relative;
-}
-
-.time-line-white{
-    width: 40%;
-    border: 3px solid white;
-    border-radius: 3px;
-
-
-    position: absolute;
-    left: -2px;
-    top: -3px;
-}
-
-.time-line-white:hover{
-    width: 40%;
-    border: 3px solid greenyellow;
-    border-radius: 3px;
-
-
-    position: absolute;
-    left: -2px;
-    top: -3px;
-}
-
 #volume-line{
     width: 30%;
 }
 
-.time,
-.time-song{
-    font-size: 10px;
-}
 
-.play{
-    font-size: 25px;
-}
 
-.sinister{
-    width: 35px;
-    height: auto;
-}
-
-.song,
-.band{
-    font-size: 12px;
-    text-decoration: none;
-    font-weight: 900;
-}
