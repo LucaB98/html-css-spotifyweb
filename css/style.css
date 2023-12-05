@@ -130,6 +130,7 @@ a:hover{
 
 .nav-center{
     flex-grow: 1;
+    overflow: auto;
 }
 
 .nav-footer{
@@ -164,6 +165,7 @@ li a{
 
 .playlist{
    overflow: auto;
+   height: 300px;
 }
 
 .playlist li{
