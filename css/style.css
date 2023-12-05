@@ -363,8 +363,9 @@ li a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    
 }
 
 .board-time > *{
@@ -386,8 +387,10 @@ li a{
    margin: 0 3px;
 }
 
+
+
 .time-line{
-    width: 45%;
+    width: 40%;
     border: 3px solid #5A5A5A;
     border-radius: 3px;
 
@@ -414,6 +417,10 @@ li a{
     position: absolute;
     left: -2px;
     top: -3px;
+}
+
+#volume-line{
+    width: 30%;
 }
 
 .time,

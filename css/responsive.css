@@ -6,3 +6,26 @@
         display: none;
     }
 }
+
+@media screen and (min-width: 878px){
+    .col-song{
+        flex-basis: calc(100% / 4);
+    }
+
+    .icon-song{
+        display: flex;
+        gap: 5px;
+    }
+
+    .time-line{
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    .col-song{
+        flex-basis: calc(100% / 6);
+    }
+
+}
