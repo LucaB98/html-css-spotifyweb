@@ -120,6 +120,8 @@ a:hover{
     height: 100%;
     width: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-header{
@@ -127,7 +129,7 @@ a:hover{
 }
 
 .nav-center{
-    height: calc(100vh - 300px);
+    flex-grow: 1;
 }
 
 .nav-footer{
@@ -162,7 +164,6 @@ li a{
 
 .playlist{
    overflow: auto;
-   height: 100%;
 }
 
 .playlist li{
