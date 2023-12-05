@@ -78,12 +78,14 @@ a:hover{
     background-color: black;
     width: 60px;
     flex-shrink: 0;
+    display: block;
 }
 
 .sidebar-big{
     background-color: black;
     width: 200px;
     flex-shrink: 0;
+    display: none;
 }
 
 #main{
