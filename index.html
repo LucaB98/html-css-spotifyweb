@@ -20,29 +20,89 @@
 </head>
 <body>
     <div class="upper-content">
-        <div class="sidebar">
+        <!-- <div class="sidebar-small">
             <nav class="navbar">
-                <ul class="nav-top">
+                <ul class="nav-top-small">
                     <li>
-                        <a href="#"><img src="img/logo-small.svg" alt="logo-small" class="logo-small"></a>
+                        <a href="#"><img src="img/logo-small.svg" alt="logo-small" class="logo-small icon-nav"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/home.svg" alt="home" class="home"></a>
+                        <a href="#"><img src="img/home.svg" alt="home" class="home icon-nav"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/search.svg" alt="search" class="search"></a>
+                        <a href="#"><img src="img/search.svg" alt="search" class="search icon-nav"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/libreria.svg" alt="libreria" class="libreria"></a>
+                        <a href="#"><img src="img/libreria.svg" alt="libreria" class="libreria icon-nav"></a>
                     </li>
                 </ul>
-                <ul class="nav-bot">
+                <ul class="nav-bot-small">
                     <li>
-                        <a href="#"><img src="img/download.svg" alt="download" class="download"></a>
+                        <a href="#"><img src="img/download.svg" alt="download" class="download icon-nav"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/profile.svg" alt="profile" class="profile"></a>
+                        <a href="#"><img src="img/profile.svg" alt="profile" class="profile icon-nav"></a>
                     </li>
+                </ul>   
+            </nav>
+        </div> -->
+        <div class="sidebar-big">
+            <nav class="navbar-big">
+                <div class="nav-header">
+                    <ul class="principal-nav">
+                        <li>
+                            <a href="#"><img src="img/logo.svg" alt="logo" class="logo "></a>
+                        </li>
+                        <li>
+                            <a href="#" class="active-left"><img src="img/home.svg" alt="home" class="home icon-nav"> <span class="text-sidebar">Home</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/search.svg" alt="search" class="search icon-nav"> <span class="text-sidebar">Cerca</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/libreria.svg" alt="libreria" class="libreria icon-nav"> <span class="text-sidebar">La tua libreria</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-center">
+                    <h1 class="title-playlist">PLAYLIST</h1>
+                    <ul class="playlist">
+                        <li>
+                            <a href="#"><i class="fa-solid fa-square-plus"></i><span>Crea playlist</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Nome playlist</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Nome playlist</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Nome playlist</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Nome playlist</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Nome playlist</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Nome playlist</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Nome playlist</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-footer">
+                    <ul class="nav-bot">
+                        <li class="add-app">
+                            <a href="#"><img src="img/download.svg" alt="download" class="download"> <span class="text-sidebar">Installa app</span></a>
+                        </li>
+                        <li class="john-doe">
+                            <a href="#"><img src="img/profile.svg" alt="profile" class="profile icon-nav"> <span class="text-sidebar">John Doe</span></a>
+                        </li>
+                    </ul> 
+                </div>  
             </nav>
         </div>
         <main id="main">
@@ -53,7 +113,7 @@
                 <nav class="box-nav-main">
                     <ul class="nav-main">
                         <li class="btn-nav">
-                            <a href="#">IN EVIDENZIA</a>
+                            <a href="#" class="active-bot">IN EVIDENZIA</a>
                         </li>
                         <li class="btn-nav">
                             <a href="#">PODCAST</a>
@@ -78,8 +138,8 @@
                         <div class="col-song">
                             <div class="card-song">
                                 <div class="box-img">
-                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                     <img src="img/metal_lifting.jpg" alt="metal" class="card">
+                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                 </div>
                                 <h1 class="title-card">Heavy Metal</h1>
                                 <h2 class="subtitle-card">Subtitle</h2>
@@ -88,8 +148,8 @@
                         <div class="col-song">
                             <div class="card-song">
                                 <div class="box-img">
-                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                     <img src="img/stranger.jpeg" alt="stranger-things" class="card">
+                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                 </div>
                                 <h1 class="title-card">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h1>
                                 <h2 class="subtitle-card">Kyle Dixon & Micheal Stein</h2>
@@ -98,8 +158,8 @@
                         <div class="col-song">
                             <div class="card-song">
                                 <div class="box-img">
-                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                     <img src="img/aquietplace.jpeg" alt="a quiet place" class="card">
+                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                 </div>
                                 <h1 class="title-card">A quiet place</h1>
                                 <h2 class="subtitle-card">Subtitle</h2>
@@ -108,8 +168,8 @@
                         <div class="col-song">
                             <div class="card-song">
                                 <div class="box-img">
-                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                     <img src="img/split.jpeg" alt="split" class="card">
+                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                 </div>
                                 <h1 class="title-card">Split</h1>
                                 <h2 class="subtitle-card">Subtitle</h2>
@@ -118,8 +178,8 @@
                         <div class="col-song">
                             <div class="card-song">
                                 <div class="box-img">
-                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                     <img src="img/cure.jpeg" alt="cure" class="card">
+                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                 </div>
                                 <h1 class="title-card">A cure for wellness</h1>
                                 <h2 class="subtitle-card">Subtitle</h2>
@@ -128,8 +188,8 @@
                         <div class="col-song">
                             <div class="card-song">
                                 <div class="box-img">
-                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                     <img src="img/sinister.jpeg" alt="sinister" class="card">
+                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                 </div>
                                 <h1 class="title-card">Sinister</h1>
                                 <h2 class="subtitle-card">Subtitle</h2>
@@ -144,8 +204,8 @@
                         <div class="col-song">
                             <div class="card-song">
                                 <div class="box-img">
-                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                     <img src="img/radar.jpeg" alt="radar" class="card">
+                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                 </div>
                                 <h1 class="title-card">Release Radar</h1>
                             </div>
@@ -153,8 +213,8 @@
                         <div class="col-song">
                             <div class="card-song">
                                 <div class="box-img">
-                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                     <img src="img/mixdaily.jpeg" alt="mix Daily" class="card">
+                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                 </div>
                                 <h1 class="title-card">Daily Mix 1</h1>
                             </div>
@@ -168,8 +228,8 @@
                         <div class="col-song">
                             <div class="card-song radius-50">
                                 <div class="box-img">
-                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                     <img src="img/youg.jpeg" alt="youg" class="radius-50 card">
+                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                 </div>
                                 <h1 class="title-card">Lana del Rey</h1>
                             </div>
@@ -177,8 +237,8 @@
                         <div class="col-song">
                             <div class="card-song">
                                 <div class="box-img">
-                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                     <img src="img/einaudi.jpeg" alt="einaudi" class="radius-50 card">
+                                    <a href="#"><i class="fa-regular fa-circle-play play-img"></i></a>
                                 </div>
                                 <h1 class="title-card">Ludovico einaudi</h1>
                             </div>
@@ -202,16 +262,20 @@
                 </div>
             </div>
             <div class="footer-center">
-                <div class="casual"><a href="#"><i class="fa-solid fa-shuffle"></i></a></div>
-                <div class="back"><a href="#"><i class="fa-solid fa-backward-step"></i></a></div>
-                <div class="play"><a href="#"><i class="fa-regular fa-circle-play"></i></a></div>
-                <div class="step"><a href="#"><i class="fa-solid fa-forward-step"></i></a></div>
-                <div class="rotate"><a href="#"><i class="fa-solid fa-rotate-right"></i></a></div>
-                <div class="time">0:25</div>
-                <div class="time-line">
-                    <div class="time-line-white"></div>
+                <div class="board-time">
+                    <div class="casual"><a href="#"><i class="fa-solid fa-shuffle"></i></a></div>
+                    <div class="back"><a href="#"><i class="fa-solid fa-backward-step"></i></a></div>
+                    <div class="play"><a href="#"><i class="fa-regular fa-circle-play"></i></a></div>
+                    <div class="step"><a href="#"><i class="fa-solid fa-forward-step"></i></a></div>
+                    <div class="rotate"><a href="#"><i class="fa-solid fa-rotate-right"></i></a></div>
                 </div>
-                <div class="time-song">4:35</div>
+                <div class="board-time">
+                    <div class="time">0:25</div>
+                    <div class="time-line">
+                    <div class="time-line-white"></div>
+                    </div>
+                    <div class="time-song">4:35</div>
+                </div>
             </div>
             <div class="footer-right">
                 <div class="catalog"><a href="#"><i class="fa-solid fa-list"></i></a></div>

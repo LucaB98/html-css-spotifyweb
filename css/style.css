@@ -16,6 +16,16 @@ body{
     margin: 0 auto;
 } */
 
+.active-bot{
+    border-bottom: 2px solid greenyellow ;
+    padding: 10px; 
+}
+
+.active-left{
+    border-left: 2px solid greenyellow ;
+    padding: 10px; 
+}
+
 img{
     width: 100%;
     height: auto;
@@ -35,8 +45,19 @@ ul{
     font-weight: 900;
 }
 
+.icon-nav{
+    width: 20px;
+    height: 20px;
+}
+
+.logo{
+    width: 100px;
+    height: 40px;
+}
+
 a{
     color: white;
+    text-decoration: none;
 }
 
 a:hover{
@@ -53,9 +74,15 @@ a:hover{
     display: flex;
 }
 
-.sidebar{
+.sidebar-small{
     background-color: black;
     width: 60px;
+    flex-shrink: 0;
+}
+
+.sidebar-big{
+    background-color: black;
+    width: 200px;
     flex-shrink: 0;
 }
 
@@ -72,28 +99,100 @@ a:hover{
     left: 0;
     right: 0;
     top: 0;
+    z-index: 1;
 }
 
-.nav-top li{
-    width: 40%;
+.nav-top li,
+.nav-bot li{
+    width: 100%;
     margin: 5px 0;
 }
 
-.navbar{
+.navbar-small{
     height: 100%;
-    width: 60px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.nav-top,
-.nav-bot{
+.navbar-big{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.nav-header{
+    height: 150px;
+}
+
+.nav-center{
+    height: calc(100vh - 300px);
+}
+
+.nav-footer{
+    height: 80px;
+}
+
+.principal-nav > *{
+    margin: 10px 0;
+}
+
+.nav-top-small li,
+.nav-bot-small li{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
+
+.sidebar-big .nav-top,
+.sidebar-big .nav-bot{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+li a{
+    padding: 10px;
+}
+
+.nav-center > *{
+    margin: 10px 0;
+}
+
+.playlist{
+   overflow: auto;
+   height: 100%;
+}
+
+.playlist li{
+    margin: 10px 0;
+}
+
+.title-playlist{
+    font-size: 14px;
+    font-weight: 900;
+    padding: 0 10px;
+}
+
+.fa-square-plus{
+    font-size: 40px;
+    margin-right: 5px;
+}
+
+
+.text-sidebar{
+    font-size: 13px;
+    font-weight: bold;
+    vertical-align: 40%;
+    margin: 5px;
+}
+
+.add-app{
+    border-bottom: 2px solid gray;
+}
+
+
 
 .download{
     width: 22px;
@@ -184,7 +283,6 @@ a:hover{
     left: 50%;
 
     translate: -50% -50%;
-    z-index: 1;
 }
 
 .box-img:hover .play-img{
@@ -245,14 +343,27 @@ a:hover{
     
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
 .footer-center > *{
     margin: 0px 9px;
+}
+
+.board-time{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.board-time > *{
+    margin: 0 8px;
 }
 
 .footer-right{
@@ -262,8 +373,12 @@ a:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
+}
+
+.footer-right > *{
+   margin: 0 3px;
 }
 
 .time-line{
